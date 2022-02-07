@@ -114,7 +114,7 @@
                                     <P>Subject: {{ fetchLesson(cartItem.lessonID).topic }}<br> Location: {{ fetchLesson(cartItem.lessonID).location }}<br> Price: <span>&#163;{{ fetchLesson(cartItem.lessonID).price }}</span><br>  Icon: <span v-bind:class="fetchLesson(cartItem.lessonID).icon"></span> <br>  Quantity: <span > {{cartItem.space}}</span></P>
                                 </div>
                                 <div class="col-md-6">
-                                    <img v-bind:src="`http://localhost:3000/${fetchLesson(cartItem.lessonID).image}`" alt=""
+                                    <img v-bind:src="`https://cst3145-cw2-backend.herokuapp.com/${fetchLesson(cartItem.lessonID).image}`" alt=""
                                         style="width: 100px; height: 100px; margin-top: 20px">
                                 </div>
                             </div>
