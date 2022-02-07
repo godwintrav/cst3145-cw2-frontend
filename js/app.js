@@ -57,6 +57,14 @@ let store = new Vue({
 
 
         },
+        cartCount: function(){
+            let cartQuantity = 0;
+            for (let index = 0; index < this.cartItems.length; index++) {
+                cartQuantity += this.cartItems[index].space;
+                
+            }
+            return cartQuantity;
+        },
         searchLessons: function () {
             
             fetch("https://cst3145-cw2-backend.herokuapp.com/collection/lessons/" + this.searchTxt).then(

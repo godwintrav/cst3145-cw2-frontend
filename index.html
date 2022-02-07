@@ -32,7 +32,7 @@
                     <div class="col-md-2 cart">
                         <button class="btn btn-1 btn-info" v-bind:disabled="(cartItems.length <= 0)"
                         v-on:click="updateShowProduct"><p class="fa fa-shopping-cart mt-2" style="color: white;"></p> <span
-                            style="color: white">{{cartItems.length}}</span></button>
+                            style="color: white">{{cartCount()}}</span></button>
                     </div>
                 </div>
             </div>
